@@ -5,20 +5,36 @@
 <link rel="stylesheet" href="styles.css">
 
 
+<header>
+	<h1>(o･｀Д´･o)</h1>
+	<h3>lil' coach</h3>
+	<small>stay on task</small>
+</header>
+
 <main>
+	
+	<div id="start-form">
+		<div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+			<input id="time" class="mdl-textfield__input" type="text" pattern="-?[0-9]*(\.[0-9]+)?" id="sample2">
+			<label class="mdl-textfield__label" for="sample2">Time (minutes)</label>
+			<span class="mdl-textfield__error">Input is not a number!</span>
+		</div>
 
-	<div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-		<input id="time" class="mdl-textfield__input" type="text" pattern="-?[0-9]*(\.[0-9]+)?" id="sample2">
-		<label class="mdl-textfield__label" for="sample2">Time (minutes)</label>
-		<span class="mdl-textfield__error">Input is not a number!</span>
+		<div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+			<input id="n" class="mdl-textfield__input" type="text" pattern="-?[0-9]*(\.[0-9]+)?" id="sample2">
+			<label class="mdl-textfield__label" for="sample2">Iterations</label>
+			<span class="mdl-textfield__error">Input is not a number!</span>
+		</div>
+		<button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" id="start">Start</button>
 	</div>
-
-	<div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-		<input id="n" class="mdl-textfield__input" type="text" pattern="-?[0-9]*(\.[0-9]+)?" id="sample2">
-		<label class="mdl-textfield__label" for="sample2">Iterations</label>
-		<span class="mdl-textfield__error">Input is not a number!</span>
+	<div id="timer">
+		<h3 id="countdown"></h3>
+		<p id="description"></p>
 	</div>
-	<button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" id="start">Start</button>
-
 </main>
+
 <script src="script.js" charset="utf-8"></script>
+
+<!-- Display the countdown timer in an element -->
+
+
