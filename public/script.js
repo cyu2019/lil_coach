@@ -40,7 +40,7 @@ document.getElementById("start").addEventListener('click',(e)=> {
 		
 		if (n > 1) {
 			new Notification(nextMessage.kaomoji, {
-				'body': nextMessage.message + "\n(" + (document.getElementById("time").value*n) + " minutes remaining)"
+				'body': nextMessage.message + "\n(" + (document.getElementById("time").value*(n-1)) + " minutes remaining)"
 			});
 			n --;
 			loadNextMessage();
